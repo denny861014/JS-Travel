@@ -1,0 +1,220 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+.wrap{
+    margin: 0 auto;
+    width: 1024px;
+}
+.header{
+    background-image: url(/img/Hero.png);
+    background-repeat: no-repeat;
+}
+.header h1{
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    letter-spacing: 3.89px;
+    padding-top: 90px;
+}
+.header .areaSelect{
+    width: 452px;
+    height: 48px;
+    border: 3px solid #fff;
+    border-radius: 3px;
+    margin: 96px 279px 0px 293px;
+    background: rgba(255,255,255,0.70);
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 21px;
+}
+.hotArea{
+    width: 800px;
+    background: #fff;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.20);
+    border-radius: 5px;
+    margin: 72px 112px 0px 112px;
+}
+.hotArea h2{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    padding: 20px 683px 0px 26px;
+}
+.hotAreaList{
+    display: flex;
+    padding-top: 14px;
+    padding-bottom: 18px;
+}
+.hotAreaList li input{
+    border-radius: 5px;
+    font-size: 20px;
+    margin-left: 30px;
+    padding: 11px 34px;
+    border: none;
+    color: #fff;
+}
+.hotAreaList li input:hover{
+    cursor: pointer;
+    box-shadow: 0 1px 3px 0 #000
+}
+.divider{
+  position: relative;
+}
+.dashed{
+  margin-top: 49px;
+  border-top: 1px dashed #559AC8;
+}
+.fa-sort-down {
+  position: absolute;
+  top: -15px;
+  left: 48%;
+  color: #559AC8;
+  border: 2px solid #559AC8;
+  background-color: #fff;
+  border-radius: 50px;
+  padding: 2px 8px 10px 8px;
+}
+.areaName{
+  text-align: center;
+  margin-top: 65px;
+  font-size: 36px;
+  color: #8A82CC;
+}
+.mainList{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 24px;
+  margin-left: 40px;
+  margin-right: 40px;
+  justify-content: space-between;
+}
+.contentList{
+  position: relative;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 20%);
+  margin-bottom: 18px;
+  width: 464px;
+}
+.list_img{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 155px;
+  width: 464px;
+  background-position: center;
+  background-size: 100%;
+  padding-bottom: 14px;
+}
+.list_img h4{
+  font-size: 24px;
+  color: #FFFFFF;
+  padding-left: 22px;
+}
+.list_img h5{
+  font-size: 16px;
+  color: #FFFFFF;
+  padding-right: 24px;
+}
+.list_info{
+  padding-top: 16px;
+  padding-bottom: 22px;
+}
+.list_info li{
+  line-height: 30px;
+  padding-left: 23px;
+}
+.list_info li img{
+  margin-right: 9px;
+}
+.ticket{
+  position: absolute;
+  bottom: 19px;
+  right: 24px;
+}
+.ticket img{
+  padding-right: 8px;
+}
+.pagination {
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  list-style: none;
+  border-radius: .25rem;
+}
+.page-link {
+  position: relative;
+  display: block;
+  padding: .5rem .75rem;
+  margin-left: -1px;
+  line-height: 1.25;
+  color: #007bff;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+}
+.page-item.active .page-link {
+  z-index: 1;
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+.footer{
+  background: #559AC8;
+  height: 90px;
+  text-align: center;
+}
+.footer h4{
+  font-size: 14px;
+  padding-top: 15px;
+}
+.goTop{
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+}

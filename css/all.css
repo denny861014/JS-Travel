@@ -52,7 +52,7 @@ q:before, q:after {
     width: 1024px;
 }
 .header{
-    background-image: url(/img/Hero.png);
+    background-image: url(../img/Hero.png);
     background-repeat: no-repeat;
 }
 .header h1{
